@@ -1,105 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" >
 <head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />	
-	<title>Realtime Development</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <title>Sign Up Form</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
-	<!-- stylesheets -->
-	<link rel="stylesheet" type="text/css" href="css/compiled/theme.css">
-    <link rel="stylesheet" type="text/css" href="css/vendor/ionicons.min.css">
-    <link rel="stylesheet" type="text/css" href="css/vendor/flipclock.css">
+  <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
 
-	<!-- javascript -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script src="js/bootstrap/bootstrap.min.js"></script>
-    <script src="js/vendor/flipclock/libs/base.js"></script>
-    <script src="js/vendor/flipclock/flipclock.js"></script>
-    <script src="js/vendor/flipclock/faces/hourlycounter.js"></script>
+      <link rel="stylesheet" href="css/style.css">
 
-	<script src="js/theme.js"></script>
-
-	<!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->    
+  
 </head>
-<body id="coming-soon" class="">
 
-    <div class="skins-nav">
-        <a href="#" class="skin light active">
-            <span class="text">Light</span>
-            <span class="ion ion-android-checkmark"></span>
-        </a>
-        <a href="#" class="skin dark">
-            <span class="text">Dark</span>
-            <span class="ion ion-android-checkmark"></span>
-        </a>
+<body>
+  
+<div class="container">
+  <form>
+    <div class="row">
+      <h4>Account</h4>
+      <div class="input-group input-group-icon">
+        <input type="text" placeholder="Full Name"/>
+        <div class="input-icon"><i class="fa fa-user"></i></div>
+      </div>
+      <div class="input-group input-group-icon">
+        <input type="email" placeholder="Email Adress"/>
+        <div class="input-icon"><i class="fa fa-envelope"></i></div>
+      </div>
+      <div class="input-group input-group-icon">
+        <input type="password" placeholder="Password"/>
+        <div class="input-icon"><i class="fa fa-key"></i></div>
+      </div>
     </div>
-
-    <div class="container">
-        <div class="row info">
-            <div class="col-md-12">
-                <h1><a href="">Realtime Development</a></h1>
-                <h3>We're launching very soon.</h3>
-            </div>
+    <div class="row">
+      <div class="col-half">
+        <h4>Date of Birth</h4>
+        <div class="input-group">
+          <div class="col-third">
+            <input type="text" placeholder="DD"/>
+          </div>
+          <div class="col-third">
+            <input type="text" placeholder="MM"/>
+          </div>
+          <div class="col-third">
+            <input type="text" placeholder="YYYY"/>
+          </div>
         </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <div id="countdown">
-                    <div id="clock"></div>
-                </div>
-            </div>
+      </div>
+      <div class="col-half">
+        <h4>Gender</h4>
+        <div class="input-group">
+          <input type="radio" name="gender" value="male" id="gender-male"/>
+          <label for="gender-male">Male</label>
+          <input type="radio" name="gender" value="female" id="gender-female"/>
+          <label for="gender-female">Female</label>
         </div>
-        <div class="row social">
-            <div class="col-md-12">
-                Contact Us: support@realtime.co.th
-                Tel: 02-347-0125</br>
-                <!--<a class="ion" href="#"><span class="ion-social-twitter"></span></a>-->
-                <a class="ion" href="https://www.facebook.com/realtimedevelopment/"><span class="ion-social-facebook"></span></a> 
-                <div class="tm">Realtime Development</div>
-            </div>
-        </div>
+      </div>
     </div>
+    <div class="row">
+      <h4>Payment Details</h4>
+      <div class="input-group">
+        <input type="radio" name="payment-method" value="card" id="payment-method-card" checked="true"/>
+        <label for="payment-method-card"><span><i class="fa fa-cc-visa"></i>Credit Card</span></label>
+        <input type="radio" name="payment-method" value="paypal" id="payment-method-paypal"/>
+        <label for="payment-method-paypal"> <span><i class="fa fa-cc-paypal"></i>Paypal</span></label>
+      </div>
+      <div class="input-group input-group-icon">
+        <input type="text" placeholder="Card Number"/>
+        <div class="input-icon"><i class="fa fa-credit-card"></i></div>
+      </div>
+      <div class="col-half">
+        <div class="input-group input-group-icon">
+          <input type="text" placeholder="Card CVC"/>
+          <div class="input-icon"><i class="fa fa-user"></i></div>
+        </div>
+      </div>
+      <div class="col-half">
+        <div class="input-group">
+          <select>
+            <option>01 Jan</option>
+            <option>02 Jan</option>
+          </select>
+          <select>
+            <option>2015</option>
+            <option>2016</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <h4>Terms and Conditions</h4>
+      <div class="input-group">
+        <input type="checkbox" id="terms"/>
+        <label for="terms">I accept the terms and conditions for signing up to this service, and hereby confirm I have read the privacy policy.</label>
+      </div>
+    </div>
+  </form>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
-    <script type="text/javascript">
-        $(function () {
-                
-            var clock;
+    <script  src="js/index.js"></script>
 
-            // Grab the current date
-            var currentDate = new Date();
-
-            // Set some date in the future. In this case, it's always Jan 1
-            var futureDate  = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate(), currentDate.getHours() + 20);
-
-            // Calculate the difference in seconds between the future and current date
-            var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
-
-            // Instantiate a coutdown FlipClock
-            clock = $('#clock').FlipClock(diff, {
-                countdown: true
-            });
-
-
-            // skin changer
-            var $skins = $(".skins-nav .skin");
-            $skins.click(function (e) {
-                e.preventDefault();
-
-                $skins.removeClass("active");
-                $(this).addClass("active");
-
-                if ($(this).hasClass("light")) {
-                    $("body").removeClass("dark");
-                } else {
-                    $("body").addClass("dark");
-                }
-            });
-
-
-        });
-    </script>
 </body>
 </html>
